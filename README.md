@@ -1,5 +1,5 @@
 # Blog-App
-This is a blog application where users can add, like comment and manage their blog posts.
+This is a blog application where users can add, like, comment and manage their blog posts.
 ## Built With
 
 - [x] Programming Language: Ruby
@@ -63,7 +63,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to microverse and anyone who supported me through out the project
 
 ## 📝 License
 
