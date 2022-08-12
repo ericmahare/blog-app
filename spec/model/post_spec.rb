@@ -1,20 +1,25 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-  subject { Post.new(title: 'Title', text: 'Body', user_id: user.id, commentscounter: 1) }
+  before(:all) do
+    user = User.new(name: 'Test', postscounter: 0)
+    user.save
+  end
+
+  subject { Post.new(title: 'Title', text: 'test', commentscounter: 1, likescounter: 0, user_id: 1) }
+
   before { subject.save }
 
   context 'validations' do
     it 'Comments_counter should be integer' do
-      expect(subject).to_not be_valid
+      expect(subject).to be_valid
     end
     it 'Title should be present' do
       subject.title = nil
       expect(subject).to_not be_valid
     end
 
-    it 'Comments_counter should be present' do
+    it 'Commentscounter should be present' do
       subject.commentscounter = nil
       expect(subject).to_not be_valid
     end
