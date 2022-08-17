@@ -14,7 +14,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'renders correct' do
       expect(response).to render_template(:index)
-    end
+    
   end
 end
 
