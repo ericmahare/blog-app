@@ -6,6 +6,10 @@
     <div class="user_name">
       <h1><%=@user.name%>
     </div>
+    <h4>Number of posts: <%= @user.postscounter %></h4>
+    <div class="btn_create_post">
+        <%= link_to "Create New Post", new_user_post_path , class: "btn_post_new" %>
+     </div>
   </div>
   <% @posts.each_with_index do |post, index| %>
       <%=link_to user_post_path(@user.id,post.id) do %>
@@ -17,10 +21,12 @@
               <h4><span>Comment <%= post.commentscounter %></span> <span>|</span> <span>Likes <%= post.likescounter %></span></h4>
         </div>
       <% end %>
-      <% post.recent_comments.each do |comment| %>
-      <div>
-        <%=comment.user.name %>: <%= comment.Text %>
-      </div>
-      <%end%>
+       <% if post.recent_comments.length == 0 %>
+            <p>No comments Available!</p>
+          <% else %>
+            <% post.recent_comments.each do |comment| %>
+              <p><%=comment.user.name %>: <%=comment.Text %></p>
+            <%end%>
+          <% end %>
     <% end %>
 </section>
