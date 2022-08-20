@@ -5,7 +5,6 @@ class LikesController < ApplicationController
     @like.user = current_user
     @like.post = Post.find(params[:post_id])
     @like.save
-    @like.update_like_counter
     redirect_to user_post_path(current_user, @post.id)
   end
 end
