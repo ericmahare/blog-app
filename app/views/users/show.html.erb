@@ -6,6 +6,9 @@
     <div class="user_name">
       <h1><%=@user.name%>
     </div>
+      <div class="btn_create_post">
+        <%= link_to "Vie all posts", user_posts_path(@user.id), class: "btn_post_new" %>
+     </div>
   </div>
   <div class="user_bio">
     <h3>Bio</h3>
