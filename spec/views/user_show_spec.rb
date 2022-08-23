@@ -20,6 +20,9 @@ RSpec.describe 'Users-show', type: :feature do
     scenario 'I can see the username of all other users.' do
       expect(page).to have_content('John')
     end
+    scenario 'I can see the number of posts the user has written.' do
+      expect(page).to have_content('Total posts: 5')
+    end
     scenario "I can see the user's bio." do
       expect(page).to have_content('lorem ipsum')
     end

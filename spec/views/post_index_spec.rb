@@ -11,8 +11,7 @@ describe 'Posts-index', type: :feature do
       @comment_two = @post1.comments.create!(Text: 'comment two', user_id: @user_two.id)
 
       @like = @post1.likes.create!(user_id: @user_one.id)
-      # click_on 'User'
-      # click_link 'See all posts'
+
       visit(user_posts_path(@user_one.id))
     end
     scenario 'I can see the users profile picture.' do

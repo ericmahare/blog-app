@@ -6,6 +6,7 @@
     <div class="user_name">
       <h1><%=@user.name%>
     </div>
+    <p>Total posts: <%= @user.postscounter ?  @user.postscounter : 0   %></p>
       <div class="btn_create_post">
         <%= link_to "View all posts", user_posts_path(@user.id), class: "btn_post_new" %>
      </div>
