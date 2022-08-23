@@ -49,6 +49,7 @@ gem 'sassc-rails', '>= 2.1.0'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 group :development, :test do
+  gem 'database_cleaner'
   gem 'rspec-rails'
 end
 # group :development, :test do
