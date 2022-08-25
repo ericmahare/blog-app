@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: social_app_development
+  database: social_app_test
   username: postgres
 
   # The password associated with the postgres role (username).
