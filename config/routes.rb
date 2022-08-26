@@ -17,6 +17,17 @@ Rails.application.routes.draw do
     resources :comments
     resources :likes
   end
+
+  namespace :api do 
+    namespace :v1 do
+      resources :users, only: %i[index] do
+        resources :posts, only: %i[index show] do
+          resources :comments, only: %i[new create] do
+          end
+        end
+      end
+    end
+  end
   
   if Rails.env.development? 
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
