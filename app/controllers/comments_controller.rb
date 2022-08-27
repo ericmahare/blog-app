@@ -10,11 +10,12 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = current_user.comments.new(post_id: @post.id, user_id: current_user.id, Text: comment_params)
     @comment.post_id = @post.id
-    if @comment.save
-      redirect_to user_post_path(current_user, @post.id)
-    else
-      flash.now[:error] = 'Error: Comment could not be saved.'
-    end
+
+    return unless @comment.save
+
+    redirect_to user_post_path(current_user, @post.id)
+
+    flash.now[:error] = 'Error: Comment could not be saved.'
   end
 
   def destroy

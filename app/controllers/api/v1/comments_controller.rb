@@ -1,4 +1,5 @@
 class Api::V1::CommentsController < ApplicationController
+  protect_from_forgery with: :null_session
   def new
     @comment = Comment.new
     respond_to do |format|
@@ -11,7 +12,6 @@ class Api::V1::CommentsController < ApplicationController
     @comment = current_user.comments.new(post_id: @post.id, user_id: current_user.id, Text: comment_params)
     @comment.post_id = @post.id
     if @comment.save
-      redirect_to user_post_path(current_user, @post.id)
       respond_to do |format|
         format.json { render json: @comment, status: 'Created' }
       end
