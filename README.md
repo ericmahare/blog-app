@@ -42,6 +42,26 @@ In the terminal, go to your file directory and run this command.
 $ git clone https://github.com/ericmahare/blog-app.git
 
 ```
+
+ ### Devise and JWT Setup
+ #### 1. Generate secret key, run the following command in your termianl:
+
+ ```
+  rake secret
+  
+```
+#### 2. Open the credentials file from the terminal. by running:
+
+```
+ EDITOR=nano rails credentials:edit 
+ 
+```
+#### 3. Paste in the following, with the key generated from running rake secret above. 
+```
+devise: jwt_secret_key: <rake secret key>
+
+```
+
 ## Author
 
 👤 **Eric Mahare**
@@ -50,6 +70,11 @@ $ git clone https://github.com/ericmahare/blog-app.git
 - Twitter: [@erikmahare](https://twitter.com/erikmahare) 
 - LinkedIn: [Eric Mahare](https://www.linkedin.com/in/eric-mahare-358944183/) 
 
+👤 **Anthony Mwenyo**
+
+- GitHub: [@mwenyoa](https://github.com/mwenyoa)
+- Twitter: [@anthony_mwenyo](https://twitter.com/phayte_p)
+- LinkedIn: [Anthony Mwenyo](https://linkedin.com/in/anthony-mwenyo)
 
 ## 🤝 Contributing
 
