@@ -32434,3 +32434,853 @@ puma (5.6.4) lib/puma/server.rb:441:in `process_client'
 puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
   [1m[35m (2751.0ms)[0m  [1m[35mCREATE DATABASE "social_app_development" ENCODING = 'unicode'[0m
   [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "social_app_development" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2022-08-27 02:09:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 207ms (ActiveRecord: 0.0ms | Allocations: 2799)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-08-27 02:09:52 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 74.4ms | Allocations: 782)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 435.1ms | Allocations: 4908)
+  Rendered layout layouts/application.html.erb (Duration: 10636.0ms | Allocations: 168562)
+Completed 500 Internal Server Error in 11587ms (ActiveRecord: 219.6ms | Allocations: 180528)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Users/USER/Documents/microverse_projects/blog-app/tmp/cache/assets/sprockets/v4.0.0/y1/y12sG3fzPnQW53dBYuxWXaJlIr7SuICplfvwj42gjso.cache.34160.16032.911057, C:/Users/USER/Documents/microverse_projects/blog-app/tmp/cache/assets/sprockets/v4.0.0/y1/y12sG3fzPnQW53dBYuxWXaJlIr7SuICplfvwj42gjso.cache)):
+  
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.1.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.1.1) lib/sprockets/loader.rb:266:in `store_asset'
+sprockets (4.1.1) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/context.rb:117:in `load'
+sprockets (4.1.1) lib/sprockets/context.rb:145:in `depend_on_asset'
+sprockets (4.1.1) lib/sprockets/context.rb:185:in `link_asset'
+sprockets-rails (3.4.2) lib/sprockets/rails/context.rb:27:in `compute_asset_path'
+actionview (7.0.3.1) lib/action_view/helpers/asset_url_helper.rb:203:in `asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:41:in `sourcemap_asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:34:in `resolved_sourcemap_comment'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:15:in `block in call'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `gsub'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/users" for 127.0.0.1 at 2022-08-27 02:10:30 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-08-27 02:10:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 195)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1397)
+  Rendered layout layouts/application.html.erb (Duration: 313.1ms | Allocations: 51721)
+Completed 200 OK in 319ms (Views: 315.3ms | ActiveRecord: 0.0ms | Allocations: 52482)
+
+
+Started GET "/1" for 127.0.0.1 at 2022-08-27 02:10:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/1"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-08-27 02:13:51 +0300
+Processing by Api::V1::UsersController#index as */*
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-08-27 02:13:51 +0300
+Processing by Devise::SessionsController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 196)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1405)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 9641)
+Completed 200 OK in 75ms (Views: 70.6ms | ActiveRecord: 0.0ms | Allocations: 10423)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-08-27 02:17:40 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 401 Unauthorized in 4ms (Allocations: 279)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-08-27 02:17:40 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 9454)
+Completed 200 OK in 62ms (Views: 55.6ms | Allocations: 10135)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-08-27 02:17:45 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 401 Unauthorized in 3ms (Allocations: 293)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-08-27 02:17:45 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 9459)
+Completed 200 OK in 57ms (Views: 52.3ms | Allocations: 10114)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-08-27 02:20:50 +0300
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (58.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+Completed 200 OK in 214ms (Views: 210.0ms | ActiveRecord: 72.8ms | Allocations: 8390)
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2022-08-27 02:22:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1"):
+  
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:23:04 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (37.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `show'
+Completed 404 Not Found in 182ms (ActiveRecord: 58.8ms | Allocations: 5821)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:3:in `show'
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:24:08 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::PostsController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-08-27 02:24:54 +0300
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.7ms | Allocations: 1443)
+
+
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:27:01 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms | Allocations: 975)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:3:in `show'
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:28:08 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::PostsController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_inhttp://127.0.0.1:3000/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:33:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_inhttp:/127.0.0.1:3000/api/v1/users/1/posts"):
+  
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:34:19 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::PostsController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:35:31 +0300
+Processing by Api::V1::PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `index'
+  [1m[36mPost Load (47.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+Completed 200 OK in 1874ms (Views: 182.8ms | ActiveRecord: 71.1ms | Allocations: 16044)
+
+
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:36:20 +0300
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `index'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 1714)
+
+
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:36:46 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:37:02 +0300
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 12ms (ActiveRecord: 0.5ms | Allocations: 966)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/3/posts" for 127.0.0.1 at 2022-08-27 02:37:34 +0300
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `index'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+  [1m[36mComment Load (36.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" IN ($1, $2, $3)[0m  [["post_id", 9], ["post_id", 12], ["post_id", 15]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+Completed 200 OK in 424ms (Views: 362.4ms | ActiveRecord: 55.0ms | Allocations: 21461)
+
+
+Started GET "/api/v1/users/3/posts/1" for 127.0.0.1 at 2022-08-27 02:37:43 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms | Allocations: 1003)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/3/posts/3" for 127.0.0.1 at 2022-08-27 02:37:47 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"3", "id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms | Allocations: 968)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=3):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:43:36 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 121ms (ActiveRecord: 13.7ms | Allocations: 6721)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:44:20 +0300
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (1026.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 500 Internal Server Error in 1039ms (ActiveRecord: 1026.1ms | Allocations: 3469)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "posts".* FROM "posts" WHERE (1) LIMIT $1
+                                             ^
+):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:48:32 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::PostsController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:49:19 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::PostsController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:50:11 +0300
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 404 Not Found in 59ms (ActiveRecord: 39.2ms | Allocations: 3942)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/api/v1/posts_controller.rb:9:in `show'
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:52:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1/posts/1"):
+  
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:54:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (16.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1/posts/1"):
+  
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:56:35 +0300
+Processing by Api::V1::PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `index'
+  [1m[36mPost Load (7.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+Completed 200 OK in 415ms (Views: 32.3ms | ActiveRecord: 49.2ms | Allocations: 18360)
+
+
+Started GET "/api/v1/users/1/posts/1" for 127.0.0.1 at 2022-08-27 02:56:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1/posts/1"):
+  
+Started GET "/api/v1/users/1/posts" for 127.0.0.1 at 2022-08-27 02:57:12 +0300
+Processing by Api::V1::PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:3:in `index'
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:5:in `index'
+Completed 200 OK in 39ms (Views: 9.8ms | ActiveRecord: 2.5ms | Allocations: 1488)
+
+
+  [1m[36mPost Load (7.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/api/v1/users/2/posts/10" for 127.0.0.1 at 2022-08-27 03:00:15 +0300
+Processing by Api::V1::PostsController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"10"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 200 OK in 97ms (Views: 3.7ms | ActiveRecord: 15.3ms | Allocations: 6805)
+
+
+Started GET "/api/v1/users/2/posts/10" for 127.0.0.1 at 2022-08-27 03:00:53 +0300
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"user_id"=>"2", "id"=>"10"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:9:in `show'
+Completed 200 OK in 21ms (Views: 1.7ms | ActiveRecord: 0.9ms | Allocations: 779)
+
+
+  [1m[35m (49.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4620565589876378625)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJwtDenylist (20220827001403)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (728.8ms)[0m  [1m[35mCREATE TABLE "jwt_denylist" ("id" bigserial primary key, "jti" character varying NOT NULL, "exp" timestamp(6) NOT NULL)[0m
+  [1m[35m (72.3ms)[0m  [1m[35mCREATE INDEX "index_jwt_denylist_on_jti" ON "jwt_denylist" ("jti")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (165.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220827001403"]]
+  [1m[36mTRANSACTION (48.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (25.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(4620565589876378625)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users" for ::1 at 2022-08-27 03:52:38 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (8.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1263ms (Views: 0.7ms | ActiveRecord: 31.3ms | Allocations: 18136)
+
+
+Started POST "/users" for ::1 at 2022-08-27 04:06:17 +0300
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (8.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1081ms (Views: 0.7ms | ActiveRecord: 39.2ms | Allocations: 11483)
+
+
+Started POST "/users" for ::1 at 2022-08-27 04:08:27 +0300
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 1007ms (Views: 0.8ms | ActiveRecord: 73.4ms | Allocations: 9087)
+
+
+Started POST "/users" for ::1 at 2022-08-27 04:10:09 +0300
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (95.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "bio", "postscounter", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "role") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", nil], ["bio", nil], ["postscounter", nil], ["created_at", "2022-08-27 01:10:40.727510"], ["updated_at", "2022-08-27 01:10:40.727510"], ["email", "test@example.com"], ["encrypted_password", "$2a$12$K18yW7YezOxE6UM7qvwHU.etOihve./LoXVuLz0mMyptehaCrlJXu"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["confirmation_token", "zqc2WZR5rTs_RZr1Fy9c"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-08-27 01:10:40.728172"], ["unconfirmed_email", nil], ["role", nil]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 110.5ms | Allocations: 927)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 758.2ms
+Delivered mail 63096f14ee5c8_34010040647a2@MEDIA.mail (1539.4ms)
+Date: Sat, 27 Aug 2022 04:10:44 +0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: test@example.com
+Message-ID: <63096f14ee5c8_34010040647a2@MEDIA.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome test@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zqc2WZR5rTs_RZr1Fy9c">Confirm my account</a></p>
+
+Completed 200 OK in 8634ms (Views: 0.6ms | ActiveRecord: 120.7ms | Allocations: 35832)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:12:12 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 982ms (ActiveRecord: 9.9ms | Allocations: 3642)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:12:49 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 823ms (ActiveRecord: 1.1ms | Allocations: 1976)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:19:06 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3523ms (ActiveRecord: 41.9ms | Allocations: 9265)
+
+
+Started POST "/users" for ::1 at 2022-08-27 04:21:56 +0300
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "bio", "postscounter", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "role") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", nil], ["bio", nil], ["postscounter", nil], ["created_at", "2022-08-27 01:21:57.058861"], ["updated_at", "2022-08-27 01:21:57.058861"], ["email", "tet@example.com"], ["encrypted_password", "$2a$12$bozhLq3uxpmqCPt2O47x4O8CylaXQ8C/LCVypmIeisjCgh8W6LFkK"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["confirmation_token", "8ppyyTsoeVGYyzo2dNSh"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-08-27 01:21:57.059009"], ["unconfirmed_email", nil], ["role", nil]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 0.6ms | Allocations: 176)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 4.4ms
+Delivered mail 630971b513a55_340c33c6484e@MEDIA.mail (9.6ms)
+Date: Sat, 27 Aug 2022 04:21:57 +0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: tet@example.com
+Message-ID: <630971b513a55_340c33c6484e@MEDIA.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome tet@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8ppyyTsoeVGYyzo2dNSh">Confirm my account</a></p>
+
+Completed 200 OK in 317ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 13065)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:22:18 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 276ms (ActiveRecord: 0.4ms | Allocations: 2017)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:25:03 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 309ms (ActiveRecord: 20.2ms | Allocations: 6712)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:26:20 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 345ms (ActiveRecord: 8.4ms | Allocations: 6679)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:27:59 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 301ms (ActiveRecord: 8.2ms | Allocations: 6662)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:29:04 +0300
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 293ms (ActiveRecord: 5.0ms | Allocations: 6717)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-27 04:29:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"tet@example.com", "password"=>"[FILTERED]"}}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "tet@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 345ms (ActiveRecord: 11.3ms | Allocations: 15628)
+
+
