@@ -50,6 +50,11 @@ $ git clone https://github.com/ericmahare/blog-app.git
 - Twitter: [@erikmahare](https://twitter.com/erikmahare) 
 - LinkedIn: [Eric Mahare](https://www.linkedin.com/in/eric-mahare-358944183/) 
 
+👤 **Anthony Mwenyo**
+
+- GitHub: [@mwenyoa](https://github.com/mwenyoa)
+- Twitter: [@anthony_mwenyo](https://twitter.com/phayte_p)
+- LinkedIn: [Anthony Mwenyo](https://linkedin.com/in/anthony-mwenyo)
 
 ## 🤝 Contributing
 
